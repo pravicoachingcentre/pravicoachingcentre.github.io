@@ -202,12 +202,7 @@
             <!-- Disable Captcha -->
             <input type="hidden" name="_captcha" value="false" />
 
-            <input
-              type="hidden"
-              name="_next"
-              value="display"
-              onclick="swal()"
-            />
+            <input type="hidden" name="_next" value="#contact" />
 
             <div class="row uniform">
               <div class="6u 12u$(xsmall)">
@@ -247,7 +242,14 @@
               </div>
             </div>
             <ul class="actions">
-              <li><input class="alt" value="Send message" type="submit" /></li>
+              <li>
+                <input
+                  class="alt"
+                  value="Send message"
+                  type="submit"
+                  onclick="swal()"
+                />
+              </li>
             </ul>
           </form>
         </section>
