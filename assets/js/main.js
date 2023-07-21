@@ -157,6 +157,3 @@ for (i = 0; i < coll.length; i++) {
 //     }
 //   });
 // }
-
-
-function  swal("Good job!", "You clicked the button!", "success");
