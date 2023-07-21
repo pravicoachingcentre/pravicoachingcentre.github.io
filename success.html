@@ -216,7 +216,12 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script>
-      swal("Thank you!", "Your message has been sent!", "success");
+      swal({
+        title: "Thank you!",
+        text: "Your message has been sent!",
+        icon: "success",
+        button: "OK",
+      });
     </script>
   </body>
 </html>
