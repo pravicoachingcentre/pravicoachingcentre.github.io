@@ -4162,7 +4162,9 @@ header h6 + p {
 
 /* Testimonials */
 .testimonials {
-  margin: 2.5rem 0;
+  /* margin: 5%; */
+  padding-left: 15%;
+  padding-right: 15%;
   width: 100%;
   display: -moz-flex;
   display: -webkit-flex;
@@ -4187,7 +4189,7 @@ header h6 + p {
   -ms-flex-grow: 0;
   flex-grow: 0;
 }
-.testimonials > * {
+/* .testimonials > * {
   width: 33.3333333333%;
 }
 .testimonials > * {
@@ -4368,7 +4370,7 @@ header h6 + p {
 }
 .testimonials .content .credit strong {
   color: #ce1b28;
-}
+} */
 
 header.special {
   text-align: center;
@@ -4462,4 +4464,40 @@ ul.paddedlist {
 
 .contact-text {
   font-size: 90%;
+}
+
+#button {
+  display: inline-block;
+  background-color: #00bc8a;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #8dc3b5;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
