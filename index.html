@@ -205,7 +205,8 @@
             <input
               type="hidden"
               name="_next"
-              value="https://yourdomain.co/thanks.html"
+              value="display"
+              onclick="swal()"
             />
 
             <div class="row uniform">
@@ -314,6 +315,10 @@
       ]><script src="assets/js/ie/respond.min.js"></script
     ><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script>
+      swal("Good job!", "You clicked the button!", "success");
+    </script>
   </body>
 </html>
