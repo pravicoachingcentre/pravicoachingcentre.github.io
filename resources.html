@@ -7,7 +7,7 @@
 <html>
   <head>
     <title>Pravi Coaching Centre</title>
-    <link rel="icon" type="image/x-icon" href="/images/book.ico" />
+    <link rel="icon" type="image/x-icon" href="images/book.ico?" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8
@@ -23,9 +23,9 @@
     <header id="header">
       <div class="inner">
         <nav id="nav">
-          <a href="/index.html">Home</a>
-          <a href="/about-us.html">About us</a>
-          <a href="/resources.html">Resources</a>
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About us</a>
+          <a href="resources.html">Resources</a>
           <a href="https://forms.gle/YY4Ad8Hc8ySWQijH7">Register</a>
         </nav>
       </div>
@@ -91,34 +91,63 @@
               ></em
             >. If you have queries about other subjects, please do ask us.
           </p>
-          <form>
+          <form
+            class="alt"
+            action="https://formsubmit.co/cc11133738082c810b87c74bdc4582c3"
+            method="POST"
+          >
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none" />
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://pravicoachingcentre.github.io/success.html"
+            />
+
             <div class="row uniform">
               <div class="6u 12u$(xsmall)">
-                <input id="name" placeholder="Name" type="text" required />
+                <input
+                  name="Name"
+                  id="name"
+                  placeholder="Name"
+                  type="text"
+                  required
+                />
               </div>
               <div class="6u$ 12u$(xsmall)">
                 <input
+                  name="Phone&nbsp;Number"
                   id="number"
-                  placeholder="Mobile Number"
+                  placeholder="Phone Number"
                   type="text"
                   required
                 />
               </div>
               <div class="12u$">
-                <input id="email" placeholder="Email" type="email" required />
+                <input
+                  name="Email"
+                  id="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
               </div>
               <div class="12u$">
                 <textarea
+                  name="Message"
                   id="message"
                   placeholder="Message"
                   rows="2"
                 ></textarea>
               </div>
             </div>
-            <!-- <button onclick="sendMail()">Send Message</button> -->
             <ul class="actions">
               <li>
-                <input value="Send message" type="button" onclick="Send()" />
+                <input class="alt" value="Send message" type="submit" />
               </li>
             </ul>
           </form>
@@ -169,15 +198,16 @@
           ><span class="label">Pinterest</span></a
         > -->
           <span> </span>
-          <a href=""> pravicoachingcentre.github.io</a>
+          <a class="icon fa-link" href="https://pravicoachingcentre.github.io/">
+            pravicoachingcentre.github.io</a
+          >
         </ul>
 
         <section>
-          Design by <a href="https://templated.co/">TEMPLATED</a>.
+          Design by <a href="https://templated.co/">TEMPLATED.</a>
         </section>
       </div>
     </div>
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
@@ -186,54 +216,7 @@
       ]><script src="assets/js/ie/respond.min.js"></script
     ><![endif]-->
     <script src="assets/js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- <script type="text/javascript">
-      function Send() {
-        var name = document.getElementById("Name").value;
-        var email = document.getElementById("Email").value;
-        var contact = document.getElementById("Contact").value;
-        var sub = document.getElementById("subject").value;
-        var mess = document.getElementById("message").value;
-
-        var body =
-          "Name: " +
-          name +
-          "<br/> Email:" +
-          email +
-          "<br/> Contact Number:" +
-          contact +
-          "<br/> Message:" +
-          mess;
-
-        console.log(body);
-        Email.send({
-          // SecureToken: "db739cc9-28e0-4c1a-b4b5-ff998f5ff0ed",
-          Host: "smtp-relay.sendinblue.com ",
-          Username: "pravicoaching@gmail.com",
-          Password: "vUytD7m6pLJ9BhET ",
-          To: "pravicoaching@gmail.com",
-          From: "tanmaypdst2011@gmail.com",
-          Subject: sub,
-          Body: body,
-        }).then((message) => {
-          if (message == "OK") {
-            swal("Successfull", "Your Data Successfull Received", "success");
-          } else {
-            swal("Something Wrong", "Your Data is not Received", "error");
-          }
-        });
-      }
-    </script> -->
-    <!-- <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("tR1DCnDIBt2xLrh3s");
-      })();
-    </script> -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
 </html>
