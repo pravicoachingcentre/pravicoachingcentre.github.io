@@ -124,36 +124,39 @@ for (i = 0; i < coll.length; i++) {
 //   });
 // }
 
-function Send() {
-  const SMTPClient = require("emailjs-smtp-client");
+// function Send() {
+//   const SMTPClient = require("emailjs-smtp-client");
 
-  // Set up SMTP server details
-  const client = new SMTPClient({
-    host: "smtp-relay.sendinblue.com",
-    port: 587,
-    secure: false,
-  });
+//   // Set up SMTP server details
+//   const client = new SMTPClient({
+//     host: "smtp-relay.sendinblue.com",
+//     port: 587,
+//     secure: false,
+//   });
 
-  // Configure authentication options
-  client.auth({
-    user: "pravicoaching@gmail.com",
-    pass: "vUytD7m6pLJ9BhET",
-  });
+//   // Configure authentication options
+//   client.auth({
+//     user: "pravicoaching@gmail.com",
+//     pass: "vUytD7m6pLJ9BhET",
+//   });
 
-  // Create an email object
-  const email = client.createMessage({
-    from: document.getElementById(email),
-    to: " pravicoaching@gmail.com ",
-    subject: "Hello from SMTP.js",
-    text: "This is the plain text body of the email",
-  });
+//   // Create an email object
+//   const email = client.createMessage({
+//     from: document.getElementById(email),
+//     to: " pravicoaching@gmail.com ",
+//     subject: "Hello from SMTP.js",
+//     text: "This is the plain text body of the email",
+//   });
 
-  // Send the email
-  client.send(email, function (err, message) {
-    if (err) {
-      console.error("Error sending email:", err);
-    } else {
-      console.log("Email sent successfully:", message);
-    }
-  });
-}
+//   // Send the email
+//   client.send(email, function (err, message) {
+//     if (err) {
+//       console.error("Error sending email:", err);
+//     } else {
+//       console.log("Email sent successfully:", message);
+//     }
+//   });
+// }
+
+
+function  swal("Good job!", "You clicked the button!", "success");
