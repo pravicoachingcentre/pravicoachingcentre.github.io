@@ -4454,8 +4454,10 @@ header.special p {
   margin-right: 15%;
 }
 
-.subjects > p:first-child {
+.subjects > p {
   text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 ul.paddedlist {
